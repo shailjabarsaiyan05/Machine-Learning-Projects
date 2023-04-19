@@ -1,6 +1,6 @@
 
 ### Zomato Restaurant Rating Prediction
-### Software an Tools Requirements
+### Software and Tools Requirements
 1. [GithubAccount](https:://github.com)
 2. [VSCodeIDE](https://code.visualstudio.com/)
 3. [HerokuAccount](https://heroku.com)
