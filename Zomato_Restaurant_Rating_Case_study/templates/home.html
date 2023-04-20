@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Zomato Restaurant Rating Prediction</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+      <input type="text" name="Restaurant ID" placeholder="Restaurant ID" required="required" /><br>
+    	<input type="text" name="Restaurant Name" placeholder="Restaurant Name" required="required" /><br>
+        <input type="text" name="Country Code" placeholder="Country Code" required="required" /><br>
+        <input type="text" name="City" placeholder="City" required="required" /><br>
+        <input type="text" name="Address" placeholder="Address" required="required" /><br>
+        <input type="text" name="Locality" placeholder="Locality" required="required" /><br>
+        <input type="text" name="Locality Verbose" placeholder="Locality Verbose" required="required" /><br>
+        <input type="text" name="Longitude" placeholder="Longitude" required="required" /><br>
+        <input type="text" name="Latitude" placeholder="Latitude" required="required" /><br>
+        <input type="text" name="Cuisines" placeholder="Cuisines" required="required" /><br>
+        <input type="text" name="Currency" placeholder="Currency" required="required" /><br>
+        <input type="text" name="Has Table booking" placeholder="Has Table booking" required="required" /><br>
+        <input type="text" name="Has Online delivery" placeholder="Has Online delivery" required="required" /><br>
+        <input type="text" name="Is delivering now" placeholder="Is delivering now" required="required" /><br>
+        <input type="text" name="Switch to order menu" placeholder="Switch to order menu" required="required" /><br>
+        <input type="text" name="Price range" placeholder="Price range" required="required" /><br>
+        <input type="text" name="Votes" placeholder="Votes" required="required" /><br>
+        <input type="text" name="Average Cost for two" placeholder="Average Cost for two" required="required" /><br>
+
+       
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+  
+   
+ </div>
+ {{prediction_text}}
+
+</body>
+</html>
