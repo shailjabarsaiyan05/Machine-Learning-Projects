@@ -6,3 +6,4 @@ seaborn
 ipympl  
 scikit-learn
 xgboost
+gunicorn
